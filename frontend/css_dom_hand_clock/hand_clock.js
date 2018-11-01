@@ -10,5 +10,11 @@ class HandClock extends HTMLElement {
     const secondHand = document.createElement('div');
     const style = document.createElement('style');
     const size = this.getAttribute('size');
+
+    clockFace.setAttribute('class', 'clock-face');
+    hourHand.setAttribute('class', 'hour hand');
+    minuteHand.setAttribute('class', 'minute hand');
+    secondHand.setAttribute('class', 'second hand');
+
   }
 }
