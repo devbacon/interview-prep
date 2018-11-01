@@ -82,6 +82,11 @@ class HandClock extends HTMLElement {
       let hours = null;
       let minutes = null;
       let seconds = null;
+
+      // If UTC is set then adjust time appropriately
+      if (this.hasAttribute('utc')) {
+      } else {
+      }
     }
   }
 }
