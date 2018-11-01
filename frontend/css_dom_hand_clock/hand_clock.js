@@ -50,6 +50,23 @@ class HandClock extends HTMLElement {
         position: absolute;
       }
 
+      .hour::after {
+        height: ${size < 200 ? 3 : 6}px;
+        margin-top: -${size < 200 ? 2 : 3}px;
+        width: ${size / 4}px;
+      }
+
+      .minute::after {
+        height: ${size < 200 ? 2 : 4}px;
+        margin-top: -${size < 200 ? 1 : 2}px;
+        width: ${size / 2.7}px;
+      }
+
+      .second::after {
+        height: ${size < 200 ? 1 : 2}px;
+        margin-top: -1px;
+        width: ${size / 2.4}px;
+      }
     `
   }
 }
