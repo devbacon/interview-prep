@@ -111,3 +111,6 @@ class HandClock extends HTMLElement {
     renderClockHands(this);
   }
 }
+
+// Register DOM element
+customElements.define('hand-clock', HandClock);
