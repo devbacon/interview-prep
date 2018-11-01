@@ -100,6 +100,10 @@ class HandClock extends HTMLElement {
       const minuteRotation = (minutes / 60) * 360 + (seconds / 60) * 6 - 90;
       const secondRotation = (seconds / 60) * 360 - 90;
 
+      // Set rotation of DOM elements
+      hourHand.style.transform = `rotate(${hourRotation}deg)`;
+      minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
+      secondHand.style.transform = `rotate(${secondRotation}deg)`;
     }
   }
 }
