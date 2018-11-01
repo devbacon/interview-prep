@@ -37,6 +37,19 @@ class HandClock extends HTMLElement {
         height: ${size}px;
         width: ${size}px;
       }
+      
+      .hand {
+        position: absolute;
+        transform: rotate(-90deg);
+      }
+
+      .hand::after {
+        background: black;
+        content: '';
+        margin-left: ${size / 50}px;
+        position: absolute;
+      }
+
     `
   }
 }
