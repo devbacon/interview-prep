@@ -85,7 +85,14 @@ class HandClock extends HTMLElement {
 
       // If UTC is set then adjust time appropriately
       if (this.hasAttribute('utc')) {
+        const utc = this.getAttribute('utc');
+        hours = time.getUTCHours() + parseInt(utc);
+        minutes = time.getUTCMinutes();
+        seconds = time.getUTCSeconds();
       } else {
+        hours = time.getHours(); 
+        minutes = time.getMinutes();
+        seconds = time.getSeconds();
       }
     }
   }
