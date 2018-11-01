@@ -105,5 +105,9 @@ class HandClock extends HTMLElement {
       minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
       secondHand.style.transform = `rotate(${secondRotation}deg)`;
     }
+
+    // Update time every second
+    setInterval(renderClockHands, 1000);
+    renderClockHands(this);
   }
 }
