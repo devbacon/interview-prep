@@ -94,6 +94,12 @@ class HandClock extends HTMLElement {
         minutes = time.getMinutes();
         seconds = time.getSeconds();
       }
+
+      // Calculate rotations based on time
+      const hourRotation = (hours / 12) * 360 + (minutes / 60) * 30 - 90;
+      const minuteRotation = (minutes / 60) * 360 + (seconds / 60) * 6 - 90;
+      const secondRotation = (seconds / 60) * 360 - 90;
+
     }
   }
 }
