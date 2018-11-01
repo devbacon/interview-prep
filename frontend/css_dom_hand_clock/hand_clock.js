@@ -68,5 +68,12 @@ class HandClock extends HTMLElement {
         width: ${size / 2.4}px;
       }
     `
+    
+    // Fill shadow DOM
+    shadow.appendChild(style);
+    shadow.appendChild(clockFace);
+    clockFace.appendChild(hourHand);
+    clockFace.appendChild(minuteHand);
+    clockFace.appendChild(secondHand);
   }
 }
