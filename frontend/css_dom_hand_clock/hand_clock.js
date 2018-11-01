@@ -75,5 +75,13 @@ class HandClock extends HTMLElement {
     clockFace.appendChild(hourHand);
     clockFace.appendChild(minuteHand);
     clockFace.appendChild(secondHand);
+
+    // Use Date object to find current time
+    const renderClockHands = () => {
+      const time = new Date();
+      let hours = null;
+      let minutes = null;
+      let seconds = null;
+    }
   }
 }
