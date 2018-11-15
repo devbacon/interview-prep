@@ -1,7 +1,7 @@
-given equal number
-determine if sum of first half is equal to second
+// given equal number
+// determine if sum of first half is equal to second
 
-isLucky(num) {
+function isLucky(num) {
   // Convert number to string
   var numStr = String(num);
 
@@ -14,6 +14,7 @@ isLucky(num) {
   var sum1 = sub1.split('').reduce((acc, curr) => {
     return acc + Number(curr);
   }, 0);
+  
   var sum2 = sub2.split('').reduce((acc, curr) => {
     return acc + Number(curr);
   }, 0);
