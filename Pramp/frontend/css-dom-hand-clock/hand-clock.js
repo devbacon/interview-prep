@@ -37,6 +37,10 @@ class HandClock extends HTMLElement {
         height: ${size}px;
         width: ${size}px;
       }
+
+      .hand::after {
+        border-radius: 100px;
+      }
       
       .hand {
         position: absolute;
@@ -114,3 +118,4 @@ class HandClock extends HTMLElement {
 
 // Register DOM element
 customElements.define('hand-clock', HandClock);
+
