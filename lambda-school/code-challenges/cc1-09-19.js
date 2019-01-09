@@ -77,9 +77,10 @@ class MaxStack extends Stack {
   }
 
   pop() {
-    const item = null;
+    let item = null;
 
     if (this.items.length) item = this.items.pop();
+    console.log('INSIDE METHOD  ' + this.items);
     // If item was popped and is equal to max then find new max
     if (item && item === this.max) this.max = Math.max(this.items);
 
@@ -91,3 +92,23 @@ class MaxStack extends Stack {
   }
 }
 
+
+// Test Cases
+const myMaxStack = new MaxStack();
+
+myMaxStack.push(3);
+myMaxStack.push(8);
+myMaxStack.push(2);
+myMaxStack.push(5);
+myMaxStack.push(1);
+
+console.log(myMaxStack.getMax());   // => 8
+console.log(myMaxStack.peek());     // => 1
+
+myMaxStack.pop();
+
+console.log(myMaxStack.getMax());   // => 8
+
+myMaxStack.push(999);
+
+console.log(myMaxStack.getMax());   // => 999
