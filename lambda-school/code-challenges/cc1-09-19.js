@@ -31,10 +31,26 @@ class Stack {
   }
 }
 
-// Pseudo Code
+// - General Pseudo Code -
 
 // copy Stack prototype into the new MaxStack class
 // add max property
 // replace push and pop methods to use new max property
   // track max property as items are pushed and popped
 // add getMax method that will return max property
+
+
+// - Method Pseudo Code -
+
+// MaxStack.push(item)
+  // this.items.push(item);
+  // if (this.max < item) this.max = item;
+
+// MaxStack.pop()
+  // const item = null;
+  // if (this.items.length) item = this.items.pop();
+  // if (item && item === this.max) this.max = Math.max(this.items);
+  // return item;
+
+// MaxStack.getMax()
+  // return this.max;
