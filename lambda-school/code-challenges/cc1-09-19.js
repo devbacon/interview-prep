@@ -63,5 +63,10 @@ class Stack {
 
 
 class MaxStack extends Stack {
+  constructor() {
+    super();
+
+    this.max = null;
+  }
 }
 
