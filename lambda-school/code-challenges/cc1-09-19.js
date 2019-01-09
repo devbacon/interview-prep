@@ -30,3 +30,11 @@ class Stack {
     return null;
   }
 }
+
+// Pseudo Code
+
+// copy Stack prototype into the new MaxStack class
+// add max property
+// replace push and pop methods to use new max property
+  // track max property as items are pushed and popped
+// add getMax method that will return max property
