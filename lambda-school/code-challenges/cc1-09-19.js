@@ -7,30 +7,6 @@
   remove the item.
 */
 
-class Stack {
-  constructor() {
-    this.items = [];
-  }
-
-  push(item) {
-    this.items.push(item);
-  }
-
-  pop() {
-    if (this.items.length) {
-      return this.items.pop();
-    }
-    return null;
-  }
-
-  peek() {
-    if (this.items.length) {
-      return this.items[this.items.length-1];
-    }
-    return null;
-  }
-}
-
 // - General Pseudo Code -
 
 // copy Stack prototype into the new MaxStack class
@@ -59,3 +35,33 @@ class Stack {
 // - Possible Improvements -
   // add getter and setter attributes
   // normalize I/O
+
+
+class Stack {
+  constructor() {
+    this.items = [];
+  }
+
+  push(item) {
+    this.items.push(item);
+  }
+
+  pop() {
+    if (this.items.length) {
+      return this.items.pop();
+    }
+    return null;
+  }
+
+  peek() {
+    if (this.items.length) {
+      return this.items[this.items.length-1];
+    }
+    return null;
+  }
+}
+
+
+class MaxStack extends Stack {
+}
+
