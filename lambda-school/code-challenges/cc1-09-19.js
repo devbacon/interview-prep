@@ -54,3 +54,8 @@ class Stack {
 
 // MaxStack.getMax()
   // return this.max;
+
+
+// - Possible Improvements -
+  // add getter and setter attributes
+  // normalize I/O
