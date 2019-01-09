@@ -68,5 +68,12 @@ class MaxStack extends Stack {
 
     this.max = null;
   }
+
+  push(item) {
+    this.items.push(item);
+
+    // Set max if null or item is greater
+    if (!this.max || this.max < item) this.max = item;
+  }
 }
 
