@@ -75,5 +75,15 @@ class MaxStack extends Stack {
     // Set max if null or item is greater
     if (!this.max || this.max < item) this.max = item;
   }
+
+  pop() {
+    const item = null;
+
+    if (this.items.length) item = this.items.pop();
+    // If item was popped and is equal to max then find new max
+    if (item && item === this.max) this.max = Math.max(this.items);
+
+    return item;
+  }
 }
 
