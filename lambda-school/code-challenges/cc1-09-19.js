@@ -85,5 +85,9 @@ class MaxStack extends Stack {
 
     return item;
   }
+
+  getMax() {
+    return this.max;
+  }
 }
 
