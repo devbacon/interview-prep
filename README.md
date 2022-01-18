@@ -1,2 +1,2 @@
 # pramp-interviews
-A collection of Pramp interview questions and answers.
+A collection of interview questions and answers
